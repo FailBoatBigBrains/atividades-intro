@@ -26,9 +26,9 @@ def calcular_media_simples_2(lista):
 def calcular_media_ponderada_2(lista):
     dividendo = 0
     divisor = 0
-    for x in range(len(lista)):
-        dividendo += lista[x][0] * lista[x][1]
-        divisor += lista[x][1]
+    for valor, peso in lista:
+        dividendo += valor * peso
+        divisor += peso
     media_ponderada_2 = dividendo / divisor
     print(media_ponderada_2)
     return media_ponderada_2
